@@ -11,9 +11,14 @@
 .col
 	+flex(1)
 
-.row-flex-col
+.row-col-flex
 	& > .col
-		@extend .row
+		+flex-display()
+		+flex-flow(row wrap)
+
+.col-flex
+	+flex-display()
+	+flex-flow(row wrap)
 
 .row-top
 	+align-items(flex-start)
@@ -79,19 +84,20 @@
 
 .row-full
 	& > .col 
-		@extend .col-full
+		+flex(0 0 100%)
 
 .row-25
 	& > .col 
-		@extend .col-25
+		+flex(0 0 25%)
 
-.row-33
+.row-33,
+.row-34
 	& > .col 
-		@extend .col-33
+		+flex(0 0 33.3333%)
 
 .row-50
 	& > .col 
-		@extend .col-50
+		+flex(0 0 50%)
 
 .col-offset-10
 	margin-left: 10%
