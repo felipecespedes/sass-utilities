@@ -4,126 +4,126 @@
 
 @import _flex
 
-.row
+.grid
 	+flex-display()
 	+flex-flow(row wrap)
 
-.col
+.column
 	+flex(1)
 
-.row-col-flex
-	& > .col
+.grid-column-flex
+	& > .column
 		+flex-display()
 		+flex-flow(row wrap)
 
-.col-flex
+.column-flex
 	+flex-display()
 	+flex-flow(row wrap)
 
-.row-top
+.grid-top
 	+align-items(flex-start)
 
-.row-bottom
+.grid-bottom
 	+align-items(flex-end)
 
-.row-center
+.grid-center
 	+align-items(center)
 
-.row-justify-center
+.grid-justify-center
 	+justify-content(center)
 
-.row-justify-space-around
+.grid-justify-space-around
 	+justify-content(space-around)
 
-.row-justify-space-between
+.grid-justify-space-between
 	+justify-content(space-between)
 
-.col-top
+.column-top
 	+align-self(flex-start)
 
-.col-bottom
+.column-bottom
 	+align-self(flex-end)
 
-.col-center
+.column-center
 	+align-self(center)
 
-.col-auto
+.column-auto
 	+flex(none)
 
-.col-full
+.column-full
 	+flex(0 0 100%)
 
-.col-10
+.column-10
 	+flex(0 0 10%)
 
-.col-20
+.column-20
 	+flex(0 0 20%)
 
-.col-25
+.column-25
 	+flex(0 0 25%)
 
-.col-33,
-.col-34
+.column-33,
+.column-34
 	+flex(0 0 33.3333%)
 
-.col-50
+.column-50
 	+flex(0 0 50%)
 
-.col-66,
-.col-67
+.column-66,
+.column-67
 	+flex(0 0 66.6666%)
 
-.col-75
+.column-75
 	+flex(0 0 75%)
 
-.col-80
+.column-80
 	+flex(0 0 80%)
 
-.col-90
+.column-90
 	+flex(0 0 90%)
 
-.row-full
-	& > .col 
+.grid-full
+	& > .column 
 		+flex(0 0 100%)
 
-.row-25
-	& > .col 
+.grid-25
+	& > .column 
 		+flex(0 0 25%)
 
-.row-33,
-.row-34
-	& > .col 
+.grid-33,
+.grid-34
+	& > .column 
 		+flex(0 0 33.3333%)
 
-.row-50
-	& > .col 
+.grid-50
+	& > .column 
 		+flex(0 0 50%)
 
-.col-offset-10
+.column-offset-10
 	margin-left: 10%
 
-.col-offset-20
+.column-offset-20
 	margin-left: 20%
 
-.col-offset-25
+.column-offset-25
 	margin-left: 25%
 
-.col-offset-33,
-.col-offset-34
+.column-offset-33,
+.column-offset-34
 	margin-left: 33.3333%
 
-.col-offset-50
+.column-offset-50
 	margin-left: 50%
 
-.col-offset-66,
-.col-offset-67
+.column-offset-66,
+.column-offset-67
 	margin-left: 66.6666%
 
-.col-offset-75
+.column-offset-75
 	margin-left: 75%
 
-.col-offset-80
+.column-offset-80
 	margin-left: 80%
 
-.col-offset-90
+.column-offset-90
 	margin-left: 90%
