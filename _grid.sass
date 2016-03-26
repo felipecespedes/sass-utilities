@@ -6,7 +6,8 @@
 @import _flex
 
 // Variables
-$grid-padding: 0 5px
+$grid-padding: 0 10px
+$column-padding: 0 10px
 
 .grid
 	+flex-display()
@@ -19,10 +20,6 @@ $grid-padding: 0 5px
 	& > .column
 		+flex-display()
 		+flex-flow(row wrap)
-
-.grid-padding
-	& > .column
-		padding: $grid-padding
 
 .column-flex
 	+flex-display()
@@ -135,3 +132,23 @@ $grid-padding: 0 5px
 
 .column-offset-90
 	margin-left: 90%
+
+.grid-padding
+	& > .column,
+	& > .column-full,
+	& > .column-5,
+	& > .column-10,
+	& > .column-20,
+	& > .column-25,
+	& > .column-33,
+	& > .column-34,
+	& > .column-50,
+	& > .column-66,
+	& > .column-67,
+	& > .column-75,
+	& > .column-80,
+	& > .column-90
+		padding: $grid-padding
+	
+.column-padding
+	padding: $column-padding
